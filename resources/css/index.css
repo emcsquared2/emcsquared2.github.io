@@ -1,3 +1,9 @@
 .banner{
    background-color: rgb(0,162,224);
+   color: #FFFFFF;
+   margin-top: 5%;
+   text-decoration: wavy;
+   text-transform: capitalize;
+   text-shadow: dimgrey;
+   text-align: center;
 }
