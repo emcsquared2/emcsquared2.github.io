@@ -4,6 +4,7 @@
    
    /*text properties*/
    color: #FFFFFF;
+   text-decoration-line: underline;
    text-decoration: wavy;
    text-transform: capitalize;
    text-shadow: dimgrey;
