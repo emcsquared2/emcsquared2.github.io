@@ -4,11 +4,11 @@
    
    /*text properties*/
    color: #FFFFFF;
-   size: 100px; 
+   size: 200px; 
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    text-transform: uppercase;
    text-align: center;
-   padding-top: 20px;
+   padding-top: 15px;
 }
     
 #earth-face{
