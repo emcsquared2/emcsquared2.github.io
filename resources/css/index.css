@@ -1,18 +1,24 @@
 .banner{
-   background-color: rgb(0,162,224);
-   margin-top: 10px;
+ 
    
    /*text properties*/
-   color: #FFFFFF;
-   size: 200px; 
+   color: #002466;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   size:small;
    text-transform: uppercase;
    text-align: center;
-   padding-top: 15px;
+   
+   
 }
     
 #earth-face{
     /*image properties*/
-   	width: 90%;
-	margin: auto;
+   	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
+
+
+/*  background-color: rgb(0,162,224);
+   margin-top: 10px; */
