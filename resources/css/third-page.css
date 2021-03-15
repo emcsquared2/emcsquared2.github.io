@@ -3,7 +3,6 @@
     background-image: linear-gradient(#93c5b1,rgb(190,220,208),white);
     position: fixed;
     top: 0%;
-    bottom:auto;
     width: 100%;
 }
 .navbar li{
@@ -27,7 +26,7 @@ width: 50px;
 
 .banner{
    /*text properties*/
-   padding-top: 3%;
+   padding-top: 4%;
      color: #002466;
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-size: 200%;
