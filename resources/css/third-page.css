@@ -3,6 +3,7 @@
     background-image: linear-gradient(#93c5b1,rgb(190,220,208),white);
     position: fixed;
     top: 0%;
+    bottom:auto;
     width: 100%;
 }
 .navbar li{
