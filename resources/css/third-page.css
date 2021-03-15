@@ -9,7 +9,7 @@
     display: inline-block;
     text-align: left;
     vertical-align: middle;
-    padding-right: 2em;
+    padding-right: 1em;
     font-size: 1.5pc;
 }
 .navbar a{
@@ -21,7 +21,7 @@
 
 .navbar-logo{
 display: inline-block;
-width: 50px;
+width: 40px;
 }
 
 .banner{
