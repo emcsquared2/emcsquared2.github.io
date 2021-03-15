@@ -26,8 +26,6 @@ width: 50px;
 
 @media screen and (max-width: 900px) {
     #banner-shrink {
-        width: 90%;
-        font-size:100%;
-        padding-top: 20%;	
+       padding-top: 20%;	
         }
 }
