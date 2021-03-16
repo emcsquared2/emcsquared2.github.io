@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World #3</title>
+    <link rel="stylesheet" href="./resources/css/day-4.css"/>
+</head>
+<body>
+        
+    <!--Navbar Section-->
+    <nav class="navbar">
+
+        <!--Navbar Logo-->
+        <ul>
+            <li><a href="./third-page.html"><img class="navbar-logo" src="./resources/images/HW logo.png" alt="HW logo"></a></li>
+            <li class="dropdown">
+                <button class="dropdown-button">My Journey</button>
+                    <div class="dropdown-content">
+                        <a href="./index.html">HW Day 1</a>
+                        <a href="./secondPage.html">HW Day 2</a>
+                        <a href="./third-page.html">HW Day 3</a>
+                        <a href="./day-4.html">HW Day 3</a>
+                    </div>
+             </li>
+              <!--<li><a href="./next-page.html">Next Page</a></li> -->
+        </ul>
+    </nav>
+
+    <!---- Banner Title 'Hello World' Section ---->
+    <div class="banner">
+        <h1>Hello World #4</h1>
+    </div>       
+
+    <!-- Rotation Station Section -->
+    <div class="banner-2">
+        <h2>Earth Spinning Station</h2>
+        <img id="small-earth" src="./resources/images/HW logo.png" alt="planet earth" />
+        <p>If you stand on the equator, the speed the earth spins is over 1000km/h. Hold on to your hats!</p>
+        <button type="button" id="rotate-left-button">Rotate Anti-clockwise</button>
+        <button type="button" id="rotate-right-button">Rotate Clockwise</button>
+        <p>I copied and pasted the relevant JS code from the "Gritty" Codecademy project (thank you Codecademy) and adapted the variable, function and element id names to make it work. I probably have about 30-40% understanding of why this works. It's at this point that I need to go back and get my head into functions in JavaScript. I look forward to doing some learning and showing off my new skills.</p>
+    </div>
+    
+    <!-- Calculator Header -->
+    <div class="banner-2">
+    <h2>Calculator</h2>
+    </div>
+
+    <!-- Calculator -->
+    <div class="calc">
+    <form name="calculator">
+        <table>
+           
+           <tr>
+             <td colspan="4">
+                <input type="text" name="display" id="display" disabled>
+             </td>
+          </tr>
+          <tr>
+             <td><input type="button" name="one" value="1" onclick = "calculator.display.value += '1'"></td>
+             <td><input type="button" name="two" value="2" onclick = "calculator.display.value += '2'"></td>
+             <td><input type="button" name="three" value="3" onclick = "calculator.display.value += '3'"></td>
+             <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+          </tr>
+          <tr>
+            <td><input type="button" name="four" value="4" onclick = "calculator.display.value += '4'"></td>
+            <td><input type="button" name="five" value="5" onclick = "calculator.display.value += '5'"></td>
+            <td><input type="button" name="six" value="6" onclick = "calculator.display.value += '6'"></td>
+            <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="one" value="7" onclick = "calculator.display.value += '7'"></td>
+            <td><input type="button" name="two" value="8" onclick = "calculator.display.value += '8'"></td>
+            <td><input type="button" name="three" value="9" onclick = "calculator.display.value += '9'"></td>
+            <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+         </tr>
+         <tr>
+            <td><input type="button" id="clear" name="clear" value="C" onclick="calculator.display.value = ''"></td>
+            <td><input type="button" name="zero" value="0" onclick = "calculator.display.value += '0'"></td>
+            <td><input type="button" name="equals" value="=" onclick ="calculator.display.value = eval(calculator.display.value)"></td>
+            <td><input type="button" class="operator" name="divide" value="/" onclick="calculator.display.value += '/'"></td>
+         </tr>
+       </table>
+     </form>
+     <p>I spotted this <a href=https://codeburst.io/making-a-calculator-with-basic-html-css-and-javascript-part-1-1e4288f0bea1>"Making a Calculator with Basic HTML,CSS and JavaScript"</a> (Thanks Emmanuel!) blog post online and wanted to have a play with it because it looked pretty friendly.  It didn't require any code input into my .js file. Presumably HTML has access to some JS functions in it's library. It was very straight forward.  One nice takeaway was that it was a helpful visual represenation of the += Assignment Operator.</p>
+     <p>input type="button" name="one" value="1" onclick = "calculator.display.value += '1'"</p>  
+     <p>Above is an example for the first row of the calculator, I realised if you just use '=' it clears the previous number you just typed. I also got to see how forms and tables are used in HTML for the first time.  Feels like a lot more meaningful and fun way of learning, rather than following a lesson in abstract. I didn't bother too much with the CSS because I am bored of fiddling with it. On that it's time for lunch and then on to some Javascript functions learning. 16/03/2021</p>
+    </div>
+
+        <!---- Image ---->
+    <img class="earth-face" src="./resources/images/helloWorldPic.jpg" alt="planet earth silly">
+
+    <footer id="footer"> 
+        <h4 id="footer-text">&#169 2021</h4>              
+    </footer>      
+
+    <!---- JS Code ---->
+    <script src="./resources/js/day-4.js"></script>
+
+</body>
+</html>

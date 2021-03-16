@@ -65,17 +65,61 @@ width: 40px;
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
 
 .banner{
    /*text properties*/
    padding-top: 4%;
-     color: #002466;
+   color: #002466;
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-size: 200%;
    text-transform: uppercase;
    text-align: center;
 }
+/* Banner Section */
+  .banner-2 {
+    background-color: rgb(215,234,226);
+    padding: 100px 0;
+    margin-top: 77px;
+    text-align: center;
+    color: #002466;
+    font-size: 160%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .banner-2 p {
+    border-top: 1px solid rgb(70, 130, 106);
+    border-bottom: 1px solid rgb(70, 130, 106);
+    padding: 10px;
+    color:rgb(70, 130, 106);
+    font-size: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-transform: initial;
+ }
+    .banner-2 button{
+    background-color:rgb(141, 194, 173);
+    color: #002466;
+    padding: 7px;
+    font-size: 100%;
+    text-shadow: 1px 1px rgb(70, 130, 106);
+    font-weight:900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+}
+    .banner-2 button:hover{
+    background-color: rgb(90, 167, 136);
+    color: white;
+    }
+
+  #small-earth {
+      height: 100px;
+      width: 100px;
+      -webkit-filter: drop-shadow(1px 1px 1px #222 );
+      filter: drop-shadow(1px 1px 1px #222);
+}
+
 .earth-face{
     /*image properties*/
    	display: block;
@@ -83,6 +127,22 @@ width: 40px;
     margin-right: auto;
     width: 90%;
 }
+
+.calc {
+    background-color: #888;
+  }
+  
+  table {
+    margin: auto;
+    background-color: #222;
+    width: 295px;
+    max-width: 295px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
+    padding-right: 10px;
+  }
+  
 .learning-points{
     display: block;
     margin-left: auto;
@@ -126,14 +186,14 @@ a{
     text-decoration:none;
 }
 @media screen and (max-width: 900px) {
-    #banner-shrink {
+    .banner {
         width: 90%;
         font-size:100%;	
         padding-top: 20%;
         }
 }
 @media screen and (max-width: 900px) {
-    #shrink-learning-points {
+    .learning-points {
         width: 90%;
         font-size:90%;	
         }
