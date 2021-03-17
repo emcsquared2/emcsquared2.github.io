@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="./resources/css/day-5.css"/>
+</head>
+<body>
+        
+    <!--Navbar Section-->
+    <nav class="navbar">
+
+        <!--Navbar Logo-->
+        <ul>
+            <li><a href="./day-5.html"><img class="navbar-logo" src="./resources/images/HW logo.png" alt="HW logo"></a></li>
+            <li class="dropdown">
+                <button class="dropdown-button">My Journey</button>
+                    <div class="dropdown-content">
+                        <a href="./index.html">HW Day 1</a>
+                        <a href="./secondPage.html">HW Day 2</a>
+                        <a href="./third-page.html">HW Day 3</a>
+                        <a href="./day-4.html">HW Day 4</a>
+                        <a href="./day-5.html">HW Day 5</a>
+                    </div>
+             </li>
+              <!--<li><a href="./next-page.html">Next Page</a></li> -->
+        </ul>
+    </nav>
+
+    <!---- Banner Title 'Hello World' Section ---->
+    <div class="banner">
+        <h1>Hello World #5</h1>
+    </div>       
+
+    <!-- Section -->
+    <div class="banner-2">
+        <h2>JavaScript Practice</h2>
+        <p>Click on the button below to receive a special message revealed below</p>
+        <button type="button" id="click-me">Click me!</button>
+        <p id="special-message">You're Awesome!</p>
+    </div>
+    
+    <p>I have learnt a lot today and it feels satisfying to consolidate past concepts and begin to create things using JS. 
+        Here are some of the things I have achieved: </p>
+        <ul>
+            <li>Taken a closer look at the Chrome Developer tools</li>
+            <li>Learnt about the BOM and the DOM.  Thank you Codecademy and JavaScript for Dummies</li>
+            <li>Getting my head around the idea that the webpage gets downloaded and the HTML parsing bit of the browser parses
+                the DOM creating a kind of map - the interface that JavaScript works with.</li>
+            <li>The fun bit came in getting the Click me button to work.  Granted I was adapting an exercise from a tutorial but I feel like I 
+                understand what I am doing with it</li>
+            <li>I spent half an hour trying to work out why my code wouldn't work for the special message (thinking that maybe I 
+                hadn't done something special in CSS to make the getElementById method to work....only to find I had forgotten to put
+                brackets () after my named function. That will teach me to pay attention to the tiny wavy underline in VS code that was 
+                subtly flagging this up to me 
+            </li>
+        </ul>
+        <!---- Image ---->
+    <img class="earth-face" src="./resources/images/helloWorldPic.jpg" alt="planet earth silly">
+
+    <footer id="footer"> 
+        <h4 id="footer-text">&#169 2021</h4>              
+    </footer>      
+
+    <!---- JS Code ---->
+    <script src="./resources/js/day-5.js"></script>
+
+</body>
+</html>

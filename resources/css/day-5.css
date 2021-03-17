@@ -1,0 +1,206 @@
+.navbar{
+    background-color: rgb(147, 197, 177);    
+    background-image: linear-gradient(#93c5b1,rgb(190,220,208),white);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+.navbar li{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    padding-right: 1em;
+    font-size: 1.5pc;
+}
+.navbar a{
+    color:white;
+    text-shadow: 1px 1px rgb(70, 130, 106);
+    font-weight:900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar-logo{
+display: inline-block;
+width: 40px;
+}
+
+.dropdown-button {
+    background-color:unset;
+    color: white;
+    padding: 7px;
+    font-size: 100%;
+    text-shadow: 1px 1px rgb(70, 130, 106);
+    font-weight:900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(215,234,226);
+    min-width: 160px;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color:white;
+    text-shadow: 1px 1px rgb(70, 130, 106);
+    font-weight:900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
+
+.banner{
+   /*text properties*/
+   padding-top: 4%;
+   color: #002466;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 200%;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+/* Banner Section */
+  .banner-2 {
+    background-color: rgb(215,234,226);
+    padding: 100px 0;
+    margin-top: 77px;
+    text-align: center;
+    color: #002466;
+    font-size: 160%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .banner-2 p {
+    border-top: 1px solid rgb(70, 130, 106);
+    border-bottom: 1px solid rgb(70, 130, 106);
+    padding: 10px;
+    color:rgb(70, 130, 106);
+    font-size: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-transform: initial;
+ }
+
+  #special-message{
+   display: none;
+ }
+
+ #click-me{
+  background-color:rgb(141, 194, 173);
+  color: white;
+  padding: 7px;
+  font-size: 100%;
+  text-shadow: 1px 1px rgb(70, 130, 106);
+  font-weight:900;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: none;
+}
+
+#click-me:hover{
+  background-color: rgb(90, 167, 136);
+  color:  #002466;
+  }
+
+.earth-face{
+    /*image properties*/
+   	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.calc {
+    background-color: #888;
+  }
+  
+  table {
+    margin: auto;
+    background-color: #222;
+    width: 295px;
+    max-width: 295px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
+    padding-right: 10px;
+  }
+  
+.learning-points{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    color: #002466;
+    font-size: 120%;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#list{
+    list-style: square;
+    text-transform: initial;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#laptop-image{
+    float: right;
+    width: 350px;
+    
+}
+#footer{
+    background-color:#002466;
+    background-image: linear-gradient(white,rgb(49,121,255),rgb(0, 36, 102));
+    margin-top: 100px;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+#footer-text{
+    margin-left: 5%
+}
+h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:lightcyan;
+    font-size: 100%;
+    display: inline;
+    margin-right: 2em;
+}
+a{
+    color: aliceblue;
+    text-decoration:none;
+}
+@media screen and (max-width: 900px) {
+    .banner .banner-2 {
+        width: 90%;
+        font-size:100%;	
+        padding-top: 20%;
+        }
+}
+@media screen and (max-width: 900px) {
+    .learning-points {
+        width: 90%;
+        font-size:90%;	
+        }
+}
+
+@media screen and (max-width: 900px) {
+    #laptop-image {
+        width: 100px;
+        }
+}
