@@ -22,6 +22,8 @@ listening to an event (in this case the click of the mouse on a button). The ele
 /*This is the event handler that will listen to the 'CLICK' and then run the clickMe function*/
 clickMe.addEventListener('click', revealMessage);
 
+
+
 /*HIDE ME BUTTON*/
 let hideMe = document.getElementById('hide-me');
 let hideSpecialMessage = document.getElementById('special-message');
@@ -30,3 +32,38 @@ function hideMessage (){
     hideSpecialMessage.style.display = 'none';
 }
 hideMe.addEventListener('click', hideMessage);
+
+
+/*Rainbow Button*/
+let earthFace = document.getElementById("earth-face-container");
+let earthFaceText = document.getElementById("earth-face-text");
+let earthFaceOverlay = document.getElementById("earth-face-overlay");
+const colorArray = ['rgba(255,0,0,0.5)','rgba(255,128,0,0.5','rgba(255,255,0,0.5)','rgba(0,128,0,0.5)', 'rgba(0,0,255,0.5)','rgba(75,0,130,0.5)','rgba(238,130,238,0.5)'];
+const textArray = ['Red Planet','Orange Planet','Yellow Planet','Green Planet', 'Blue Planet', 'Indigo Planet','Violet Planet'];
+let randomNumber;
+let planetText;
+let overlayColor;
+
+function generateRandomNumber(){
+    return Math.floor(Math.random() * 7);   
+}
+
+function generatePlanetText(){
+planetText = textArray[randomNumber];
+}
+
+function generateOverlayColor(){
+overlayColor = colorArray[randomNumber];
+}
+
+function changeText(){
+generateRandomNumber();
+randomNumber = generateRandomNumber();
+generatePlanetText();
+generateOverlayColor();
+earthFaceText.innerHTML = planetText;
+earthFaceOverlay.style.background = overlayColor;
+}
+
+
+earthFace.onclick = changeText;
