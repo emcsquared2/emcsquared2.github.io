@@ -62,11 +62,8 @@
         
     <!-- Section -->
     <div class="banner-3">
-        <h2>Rainbow Button</h2>
-        <p>Hover over and click on planet earth below.  Keep clicking to randomly change through the colours of the rainbow</p>
-        <button type="button" id="click-me">Click me!</button>
-        <p id="special-message">You're Awesome!</p>
-        <button type="button" id="hide-me">Hide message again</button>
+        <h2>Rainbow Planet Random</h2>
+        <p>Hover over and click on planet earth below.  Keep clicking to <strong><em>RANDOMLY</em></strong> change through the colours of the rainbow</p>
     </div>
     
         <!---- Image ---->
@@ -74,15 +71,24 @@
         <img id="earth-face" src="./resources/images/helloWorldPic.jpg" alt="planet earth silly">
         <div id="earth-face-overlay"><h2 id="earth-face-text">Planet Earth</h2></div>
     </div>
-    
+
     <h2>Day 6</h2>
-    <p>I  </p>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Today felt like having just taken my stabilisers off, I actually rode for a bit. I managed to look back over what I have learnt previously
+                and create the random colour changing overlay image above using my knew knowledge of DOM events and how to add event handlers.  It was mentally challenging to say the least but worth it. 
+                I think the more I do this and study simultaneously, the better I will get.  Here are some lessons learnt...
+            </li>
+            <li>I tried to create a function that produced a random number and set it to a variable. This didn't work until I set it to return a value within my 
+                random number generating function and then outside set a randomNumber variable equal to the randomNumber function.
+            </li>
+            <li>I successfully used 2 arrays to randomly select individual array elements..</li>
+            <li>const colorArray = ['rgba(255,0,0,0.5)','rgba(255,128,0,0.5','rgba(255,255,0,0.5)','rgba(0,128,0,0.5)'....etc.];
+            <li>const textArray = ['Red Planet','Orange Planet','Yellow Planet','Green Planet', 'Blue Planet'....etc.];</li>
+            </li>
+            <li>Initially I wasn't 100% confident it would work, especially with the rgba values.  But I soon realised that all I am doing is using string values as variables to pass into...
+            <li>earthFaceText.innerHTML = planetText...and...</li>  
+            <li>earthFaceOverlay.style.background = overlayColor</li>
+            <li>I know very little about baseball but I read this recently. "Don't worry about hitting the home run. Focus on hitting the singles." Or "little by little becomes a lot". Great advice for learning. </li>
         </ul>
 
     <footer id="footer"> 

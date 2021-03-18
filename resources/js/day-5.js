@@ -34,7 +34,7 @@ function hideMessage (){
 hideMe.addEventListener('click', hideMessage);
 
 
-/*Rainbow Button*/
+/*Rainbow Button Random*/
 let earthFace = document.getElementById("earth-face-container");
 let earthFaceText = document.getElementById("earth-face-text");
 let earthFaceOverlay = document.getElementById("earth-face-overlay");
@@ -64,6 +64,5 @@ generateOverlayColor();
 earthFaceText.innerHTML = planetText;
 earthFaceOverlay.style.background = overlayColor;
 }
-
 
 earthFace.onclick = changeText;
