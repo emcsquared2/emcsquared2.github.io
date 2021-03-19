@@ -39,30 +39,18 @@ let earthFace = document.getElementById("earth-face-container");
 let earthFaceText = document.getElementById("earth-face-text");
 let earthFaceOverlay = document.getElementById("earth-face-overlay");
 const colorArray = ['rgba(255,0,0,0.5)','rgba(255,128,0,0.5','rgba(255,255,0,0.5)','rgba(0,128,0,0.5)', 'rgba(0,0,255,0.5)','rgba(75,0,130,0.5)','rgba(238,130,238,0.5)'];
-const textArray = ['Red Planet','Orange Planet','Yellow Planet','Green Planet', 'Blue Planet', 'Indigo Planet','Violet Planet'];
+const textArray = ['Red','Orange','Yellow','Green', 'Blue', 'Indigo','Violet'];
 let randomNumber;
 let planetText;
 let overlayColor;
 
-function generateRandomNumber(){
-    return Math.floor(Math.random() * 7);   
-}
-
-function generatePlanetText(){
-planetText = textArray[randomNumber];
-}
-
-function generateOverlayColor(){
-overlayColor = colorArray[randomNumber];
-}
-
 function changeText(){
-generateRandomNumber();
-randomNumber = generateRandomNumber();
-generatePlanetText();
-generateOverlayColor();
+randomNumber = Math.floor(Math.random() * colorArray.length); 
+planetText = textArray[randomNumber];
+overlayColor = colorArray[randomNumber];
 earthFaceText.innerHTML = planetText;
 earthFaceOverlay.style.background = overlayColor;
 }
 
 earthFace.onclick = changeText;
+

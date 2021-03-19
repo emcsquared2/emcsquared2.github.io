@@ -200,6 +200,26 @@ width: 40px;
   opacity: 1;
 }
 
+#code-table{
+  padding: 1%;
+  border-color:rgb(70, 130, 106) ;
+  border-width: medium;
+}
+
+td{
+  padding:1%;
+  background-color: rgb(141, 194, 173);
+  text-align: center;
+  color: black;
+}
+
+#code-v1{
+  width: 100%;
+}
+#code-v2{
+  width: 100%;
+}
+
 #footer{
     background-color:#002466;
     background-image: linear-gradient(white,rgb(49,121,255),rgb(0, 36, 102));
