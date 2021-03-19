@@ -54,3 +54,43 @@ earthFaceOverlay.style.background = overlayColor;
 
 earthFace.onclick = changeText;
 
+/*Times tables quiz*/
+let firstButton = document.getElementById('first-button');
+let secondButton = document.getElementById('second-button');
+let firstQuestion = document.getElementById('first-question');
+let secondQuestion = document.getElementById('second-question');
+
+let revealButton = document.getElementById('reveal-button');
+let correctAnswer = document.getElementById('correct-answer');
+
+let randNum1;
+let randNum2;
+let actualAnswer;
+
+function generateRandNum1(){
+    return Math.floor(Math.random() * 13);
+}
+
+function generateRandNum2(){
+    return Math.floor(Math.random() * 13);
+}
+
+function generateFirstQuestion(){
+    randNum1 = generateRandNum1();
+    firstQuestion.innerHTML = randNum1;
+}
+
+function generateSecondQuestion(){
+    randNum2 = generateRandNum2();
+    secondQuestion.innerHTML = randNum2;
+}
+
+function revealCorrectAnswer(){
+    actualAnswer = randNum1 * randNum2;
+    correctAnswer.innerHTML = actualAnswer;
+}
+
+firstButton.onclick = generateFirstQuestion;
+secondButton.onclick = generateSecondQuestion;
+revealButton.onclick = revealCorrectAnswer;
+
