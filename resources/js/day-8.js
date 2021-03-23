@@ -86,7 +86,6 @@ function executeFunction(){
         userEncourageArray.push('Maybe revise this one?');
     }
     
-       
     yourResultsRow.innerHTML = 
     `For Question 1 you answered... ${randNumArray[0]} x 7 = ${answerArray[0]} <br> The correct answer was ${correctAnsArray[0]} <br> ${userEncourageArray[0]}<br></br>
     For Question 2 you answered... ${randNumArray[1]} x 7 = ${answerArray[1]} <br> The correct answer was ${correctAnsArray[1]} <br> ${userEncourageArray[1]}<br></br>
@@ -94,38 +93,7 @@ function executeFunction(){
     For Question 4 you answered... ${randNumArray[3]} x 7 = ${answerArray[3]} <br> The correct answer was ${correctAnsArray[3]} <br> ${userEncourageArray[3]}<br></br>
     For Question 5 you answered... ${randNumArray[4]} x 7 = ${answerArray[4]} <br> The correct answer was ${correctAnsArray[4]} <br> ${userEncourageArray[4]}<br></br><br></br>
     Your FINAL SCORE IS ${scoreCount} out 5`;
-   
-    
 }
 }
-
-
 startQuizButton.onclick = startQuiz;
 submitButton.onclick = executeFunction;
-
-
-
-/*
-    yourResultsRow.innerHTML = 
-    `Question 1: ${randNumArray[0]} x 7 = ${answerArray[0]} <br>
-    Question 2: ${randNumArray[1]} x 7 = ${answerArray[1]} <br>
-    Question 3: ${randNumArray[2]} x 7 = ${answerArray[2]} <br>
-    Question 4: ${randNumArray[3]} x 7 = ${answerArray[3]} <br>
-    Question 5: ${randNumArray[4]} x 7 = ${answerArray[4]} <br>
-  `;
-}*/
-
-
-/*Executefunction here that....
-executefunction()
-
-
-if count > 6{
-        bla bla bla .onclick = jjjjj
-    }
-    let NumQuizQuestions = 5;
-let i = 0;
-
-while (i < NumQuizQuestions){
-   
-}*/

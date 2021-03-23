@@ -79,6 +79,12 @@ width: 40px;
    text-align: center;
 }
 
+#git-code-link{
+background-color:palegreen;
+text-transform: uppercase;
+color:rgb(0, 36, 102)
+}
+
 /* Quiz section */
 #question-row{
   display:none;
@@ -129,7 +135,7 @@ width: 40px;
   }
 
   #show-array, #show-rand-array{
-    color:rgb(90, 167, 136);
+    color:rgb(228, 238, 234);
   }
   
 #earth-face-container{
