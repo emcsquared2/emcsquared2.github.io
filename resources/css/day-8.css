@@ -67,6 +67,8 @@ width: 40px;
 /* Change the background color of the dropdown button when the dropdown content is shown */
 /*.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
 
+
+/*MAIN PAGE Title*/
 .banner{
    /*text properties*/
    padding-top: 4%;
@@ -77,37 +79,43 @@ width: 40px;
    text-align: center;
 }
 
-/* Click Me */
-  .banner-2 {
+/* Quiz section */
+#question-row{
+  display:none;
+}
+
+#your-results-row{
+  display:none;
+}
+
+  .quiz-table-1 {
     background-color: rgb(215,234,226);
-    padding: 50px 0;
-    margin-top: 20px;
-    text-align: center;
-    color: #002466;
-    font-size: 160%;
+    padding: 1% 1%;
+    margin-top: 25px;
+    margin-left: 5%;
+    table-layout: auto;
+    width: 90%;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
-  .banner-2 p {
-    border-top: 1px solid rgb(70, 130, 106);
-    border-bottom: 1px solid rgb(70, 130, 106);
-    padding: 10px;
-    color:rgb(70, 130, 106);
-    font-size: 80%;
+  .quiz-table-1 td {
+    text-align: center;
+    color:#002466;
+    text-shadow: black;
+    font-size: 140%;
+    font-weight: 900;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     text-transform: initial;
+    padding:0.5%;
  }
 
-  #special-message{
-   display: none;
- }
 
- .banner-2 button{
+ .quiz-button{
   background-color:rgb(141, 194, 173);
   color: white;
-  padding: 7px;
+  padding: 1%;
   font-size: 100%;
   text-shadow: 1px 1px rgb(70, 130, 106);
   font-weight:900;
@@ -115,55 +123,15 @@ width: 40px;
   border: none;
 }
 
-.banner-2 button:hover{
+.quiz-button:hover{
   background-color: rgb(90, 167, 136);
   color:  #002466;
   }
 
-  /*Rainbow Button*/
-  .banner-3 {
-    background-color: red;
-    background-image: linear-gradient(red,orange,yellow,green,blue,indigo,violet);
-    padding: 50px 0;
-    margin-top: 20px;
-    text-align: center;
-    color: #002466;
-    font-size: 160%;
-    text-transform: uppercase;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  #show-array, #show-rand-array{
+    color:rgb(90, 167, 136);
   }
   
-  .banner-3 p {
-    border-top: 1px solid rgb(70, 130, 106);
-    border-bottom: 1px solid rgb(70, 130, 106);
-    padding: 10px;
-    color: white;
-    font-size: 80%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 700;
-    text-transform: initial;
- }
-
-  #special-message{
-   display: none;
- }
-
- .banner-3 button{
-  background-color:rgb(141, 194, 173);
-  color: white;
-  padding: 7px;
-  font-size: 100%;
-  text-shadow: 1px 1px rgb(70, 130, 106);
-  font-weight:900;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border: none;
-}
-
-.banner-3 button:hover{
-  background-color: rgb(90, 167, 136);
-  color:  #002466;
-  }
-
 #earth-face-container{
     position: relative;
     display:block;
@@ -180,46 +148,10 @@ width: 40px;
     width: 100%;
 }
 
-#earth-face-overlay{
-  position: absolute;
-  bottom: 0; 
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
-  height:100%;
-  transition: .5s ease;
-  opacity:0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: white;
-  font-size: 140%;
-  padding: absolute;
-  text-align: center;
-}
 
-#earth-face-container:hover #earth-face-overlay {
-  opacity: 1;
-}
 
-#code-table{
-  padding: 1%;
-  border-color:rgb(70, 130, 106) ;
-  border-width: medium;
-}
 
-td{
-  padding:1%;
-  background-color: rgb(141, 194, 173);
-  text-align: justify;
-  color: black;
-}
-
-#code-v1{
-  width: 100%;
-}
-#code-v2{
-  width: 100%;
-}
-
+/*FOOTER*/
 #footer{
     background-color:#002466;
     background-image: linear-gradient(white,rgb(49,121,255),rgb(0, 36, 102));

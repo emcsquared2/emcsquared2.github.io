@@ -1,104 +1,131 @@
-/*What do we want to do....reveal the message....*/
-/*THE FIRING EVENT*/
-/* Here we are retrieving the HTML element <button> with the #click-me ID assigned in CSS */
-let clickMe = document.getElementById('click-me');
-
-/* Here we are retrieving the HTML element <p> with the #special-message ID assigned in CSS*/
-let specialMessage = document.getElementById('special-message');
-
-/* This is the event handler function (which is going to start by looking at the HTML element <p> 
-with ID #special message which we saved to a variable specialMessage.)  We want the function to change the .display style 
-attribute currently set to 'none' (which makes it invisible) and change this to something to make it visible in the DOM*/
-function revealMessage (){
-    specialMessage.style.display = 'block';
-}
-
-/*When will what we want to do happen?*/
-/*THE LISTENING EVENT*/
-/*We also need to create an event handler that will action the revealMessage function by 
-listening to an event (in this case the click of the mouse on a button). The element event that is going to be 
-"listened to" is the click-me button.  So we need to retrieve that HTML element*/
-
-/*This is the event handler that will listen to the 'CLICK' and then run the clickMe function*/
-clickMe.addEventListener('click', revealMessage);
-
-
-
-/*HIDE ME BUTTON*/
-let hideMe = document.getElementById('hide-me');
-let hideSpecialMessage = document.getElementById('special-message');
-
-function hideMessage (){
-    hideSpecialMessage.style.display = 'none';
-}
-hideMe.addEventListener('click', hideMessage);
-
-
-/*Rainbow Button Random*/
-let earthFace = document.getElementById("earth-face-container");
-let earthFaceText = document.getElementById("earth-face-text");
-let earthFaceOverlay = document.getElementById("earth-face-overlay");
-const colorArray = ['rgba(255,0,0,0.5)','rgba(255,128,0,0.5','rgba(255,255,0,0.5)','rgba(0,128,0,0.5)', 'rgba(0,0,255,0.5)','rgba(75,0,130,0.5)','rgba(238,130,238,0.5)'];
-const textArray = ['Red','Orange','Yellow','Green', 'Blue', 'Indigo','Violet'];
-let randomNumber;
-let planetText;
-let overlayColor;
-
-function changeText(){
-randomNumber = Math.floor(Math.random() * colorArray.length); 
-planetText = textArray[randomNumber];
-overlayColor = colorArray[randomNumber];
-earthFaceText.innerHTML = planetText;
-earthFaceOverlay.style.background = overlayColor;
-}
-
-earthFace.onclick = changeText;
-
 /*Times tables quiz*/
-let firstButton = document.getElementById('first-button');
-let secondButton = document.getElementById('second-button');
-let firstQuestion = document.getElementById('first-question');
-let secondQuestion = document.getElementById('second-question');
+let startQuizButton = document.getElementById("start-quiz-button");
+let submitButton = document.getElementById("submit-button");
+let randNumField = document.getElementById('rand-num-field');
+let questionCount = document.getElementById('question-count');
+let showArray = document.getElementById('show-array');
+let showRandArray = document.getElementById('show-rand-array');
+let yourResultsRow = document.getElementById('your-results-row');
+let showResultsArray = document.getElementById('show-results-array');
 
-let userAnswer = document.getElementById('user-answer');
-let submitButton = document.getElementById('submit-button');
-let revealButton = document.getElementById('reveal-button');
-let correctAnswer = document.getElementById('correct-answer');
+let count = 1;
+let randNum;
+let correctAnsArray = [];
+let answerArray = [];
+let randNumArray = [];
+let userEncourageArray = [];
+let scoreCount = 0;
 
-let randNum1;
-let randNum2;
-let actualAnswer;
-
-function generateRandNum1(){
+const generateRandNum =()=>{
     return Math.floor(Math.random() * 13);
 }
 
-function generateRandNum2(){
-    return Math.floor(Math.random() * 13);
+ const generateNextQuestion=()=>{
+        randNum = generateRandNum();
+        randNumField.innerHTML = randNum;
+        questionCount.innerHTML = `Question ${count})`;
+        count ++;
 }
 
-function generateFirstQuestion(){
-    randNum1 = generateRandNum1();
-    firstQuestion.innerHTML = randNum1;
+const startQuiz = ()=>{
+    document.getElementById("start-row").style.display = "none";
+    document.getElementById("question-row").style.display = "inline";
+    generateNextQuestion();
 }
 
-function generateSecondQuestion(){
-    randNum2 = generateRandNum2();
-    secondQuestion.innerHTML = randNum2;
+const displayResults = ()=>{
+    document.getElementById("question-row").style.display = "none";
+    document.getElementById("your-results-row").style.display = "inline";
 }
 
-function revealCorrectAnswer(){
-    actualAnswer = randNum1 * randNum2;
-    correctAnswer.innerHTML = actualAnswer;
-}
-
-function revealUserAnswer(){
+function executeFunction(){
+    if (count <= 5) {
     let userInput = document.getElementById('user-input').value;
-    userAnswer.innerHTML = userInput;
+    answerArray.push(userInput);
+    randNumArray.push(randNum);
+    
+    /*Just for me to check what is going on when I was putting this together*/
+    showArray.innerHTML = answerArray;
+    showRandArray.innerHTML = randNumArray;  
+    
+    /*Calculating the correct answer and pushing to the relevant correctAnsArray*/
+    let correctAns = randNum * 7;
+    correctAnsArray.push(correctAns);
+    
+    /*The feedback bit for saying well done or revise this one*/
+    if (userInput == correctAns){
+        userEncourageArray.push('Well done!!!');
+        scoreCount ++;
+    } else {
+        userEncourageArray.push('Maybe revise this one?');
+    }
+
+    document.getElementById('user-input').value = "";
+    generateNextQuestion();
+
+} else {
+    displayResults();
+
+    let userInput = document.getElementById('user-input').value;
+    answerArray.push(userInput);
+    randNumArray.push(randNum);
+
+     /*Just for me to check what is going on when I was putting this together*/
+     showArray.innerHTML = answerArray;
+     showRandArray.innerHTML = randNumArray;
+
+    /*Calculating the correct answer and pushing to the relevant correctAnsArray*/
+    let correctAns = randNum * 7;
+    correctAnsArray.push(correctAns);
+   
+    /*The feedback bit for saying well done or revise this one*/
+    if(userInput == correctAns){
+        userEncourageArray.push('Well done!');
+        scoreCount ++;
+    } else{
+        userEncourageArray.push('Maybe revise this one?');
+    }
+    
+       
+    yourResultsRow.innerHTML = 
+    `For Question 1 you answered... ${randNumArray[0]} x 7 = ${answerArray[0]} <br> The correct answer was ${correctAnsArray[0]} <br> ${userEncourageArray[0]}<br></br>
+    For Question 2 you answered... ${randNumArray[1]} x 7 = ${answerArray[1]} <br> The correct answer was ${correctAnsArray[1]} <br> ${userEncourageArray[1]}<br></br>
+    For Question 3 you answered... ${randNumArray[2]} x 7 = ${answerArray[2]} <br> The correct answer was ${correctAnsArray[2]} <br> ${userEncourageArray[2]}<br></br>
+    For Question 4 you answered... ${randNumArray[3]} x 7 = ${answerArray[3]} <br> The correct answer was ${correctAnsArray[3]} <br> ${userEncourageArray[3]}<br></br>
+    For Question 5 you answered... ${randNumArray[4]} x 7 = ${answerArray[4]} <br> The correct answer was ${correctAnsArray[4]} <br> ${userEncourageArray[4]}<br></br><br></br>
+    Your FINAL SCORE IS ${scoreCount} out 5`;
+   
+    
+}
 }
 
-firstButton.onclick = generateFirstQuestion;
-secondButton.onclick = generateSecondQuestion;
-revealButton.onclick = revealCorrectAnswer;
-submitButton.onclick = revealUserAnswer;
 
+startQuizButton.onclick = startQuiz;
+submitButton.onclick = executeFunction;
+
+
+
+/*
+    yourResultsRow.innerHTML = 
+    `Question 1: ${randNumArray[0]} x 7 = ${answerArray[0]} <br>
+    Question 2: ${randNumArray[1]} x 7 = ${answerArray[1]} <br>
+    Question 3: ${randNumArray[2]} x 7 = ${answerArray[2]} <br>
+    Question 4: ${randNumArray[3]} x 7 = ${answerArray[3]} <br>
+    Question 5: ${randNumArray[4]} x 7 = ${answerArray[4]} <br>
+  `;
+}*/
+
+
+/*Executefunction here that....
+executefunction()
+
+
+if count > 6{
+        bla bla bla .onclick = jjjjj
+    }
+    let NumQuizQuestions = 5;
+let i = 0;
+
+while (i < NumQuizQuestions){
+   
+}*/
