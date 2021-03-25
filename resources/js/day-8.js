@@ -56,10 +56,13 @@ function executeFunction(){
     if (userInput == correctAns){
         userEncourageArray.push('Well done!!!');
         scoreCount ++;
+        alert("You got this correct. Well done!");
     } else {
         userEncourageArray.push('Maybe revise this one?');
+        alert("Not quite right.  Try the next one and see how you go!");
     }
 
+    
     document.getElementById('user-input').value = "";
     generateNextQuestion();
 
@@ -82,8 +85,10 @@ function executeFunction(){
     if(userInput == correctAns){
         userEncourageArray.push('Well done!');
         scoreCount ++;
+        alert("You got this correct. Well done! Click ok to check out your final score below...");
     } else{
         userEncourageArray.push('Maybe revise this one?');
+        alert("Not quite right. Click ok to check out your final score below...");
     }
     
     yourResultsRow.innerHTML = 
