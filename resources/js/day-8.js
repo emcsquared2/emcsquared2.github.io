@@ -61,7 +61,6 @@ function executeFunction(){
         userEncourageArray.push('Maybe revise this one?');
         alert("Not quite right. Try the next question.  Click ok to move to next question...")
     }
-
     document.getElementById('user-input').value = "";
     generateNextQuestion();
 
