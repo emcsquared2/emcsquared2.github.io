@@ -57,7 +57,7 @@
                     <td width=5%><button class= "quiz-button" id="submit-button">Submit Answer!</button></td>
                 </tr>
 
-                <tr><p id="your-results-row">Results should appear here</p>
+                <tr><p id="your-results-row"></p>
                 </tr>
             </table>
     </div>
@@ -65,15 +65,49 @@
     <p id="show-array">Monitor array answers </p>
     <p id="show-rand-array">Monitor rand array </p>
     
-    
+    <h2>Update 10 - 29/03/2021</h2>
+        <ul>
+            <li>Really appreciating my friends/slash mentors encouraging and giving me feedback</li>
+            <li>Added a page alert in between each question to say whether the user got it right or wrong.  Not particularly elegant but it was a quick way of adding some feedback and for me to learn how it works!</li>
+            <li>Learnt how to make a link open in a new tab  target="_blank"</li>
+            <li>
+                I have moved back to CodeCademy to continue studying (on the full stack engineer career path).
+            </li>
+             <li>
+               Signed up to Discord and will look to hopefully collaborate on a project in the near future. 
+            </li>
+            <li>Have been longing to insert a snippet of code into this webpage just to demonstrate some key learning points and share with others.
+                As a total beginner, trying to get my head around using new programs is sometimes harder than using code.  I investigated GitHub and Replit.
+                GitHub is good for a link (which I have done above).  Replit seems to embed an entire coding program widget thing, which wasn't what I wanted.
+                I got closer when I tried JSFiddle, but for some reason the iFrame wasn't working and it was a lot of trying to understand a foreign language.
+                Finally I signed up for CodePen which I had seen in other places and Ta Dah! Another example of understanding about 20% of what is going on and 
+                persisting until it works. Also amazing how collaborative the coding world is and how many tools there are for free.   
+            </li>
+            <li>
+                When going over the loops again I realised I could improve a bit of code in my quiz. See below.  I'm pretty pleased with this.  
+                I do wonder about the   <em>yourResultsRow.innerHTML += `Your FINAL SCORE IS ${scoreCount} out 5`</em>   It works well,  but I feel like there might be other ways of doing this better. 
+                I think what's happening is that it is replacing the whole contents of that element each time rather than adding an extra bit on each time.  So wondering if there is a more efficient way of doing it. Not sure.
+            </li>
+
+        </ul>
+    </div>
+
+    <!---- CodePen snip ---->
+    <div id="code-pen-snip">
+        <p class="codepen" data-height="400px" data-theme-id="dark" data-default-tab="js" data-user="e_mcsquared2" data-slug-hash="MWJjYmZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="7 Times tables loop code">
+            <span>See the Pen <a href="https://codepen.io/e_mcsquared2/pen/MWJjYmZ">
+            7 Times tables loop code</a> by David (<a href="https://codepen.io/e_mcsquared2">@e_mcsquared2</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+<br></br>
+
     <!---- Image ---->
     <div id= "earth-face-container">
         <img id="earth-face" src="./resources/images/helloWorldPic.jpg" alt="planet earth silly">
     </div>
-    <!--<div>
-        <iframe height="400px" width="100%" src="https://replit.com/@emcsquared2/emcsquared2githubio?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-    </div>-->
-
      
     <footer id="footer"> 
         <h4 id="footer-text">&#169 2021  Thank you Pexels and Anna Schvets for the Planet earth pic - <a href=https://www.pexels.com/@shvetsa>Click here for - Anna Shvets Pexels site</a></h4>              

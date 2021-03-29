@@ -8,7 +8,7 @@ let showRandArray = document.getElementById('show-rand-array');
 let yourResultsRow = document.getElementById('your-results-row');
 let showResultsArray = document.getElementById('show-results-array');
 
-let count = 1;
+let quesCounter = 1;
 let randNum;
 let correctAnsArray = [];
 let answerArray = [];
@@ -23,8 +23,8 @@ const generateRandNum =()=>{
  const generateNextQuestion=()=>{
         randNum = generateRandNum();
         randNumField.innerHTML = randNum;
-        questionCount.innerHTML = `Question ${count})`;
-        count ++;
+        questionCount.innerHTML = `Question ${quesCounter})`;
+        quesCounter ++;
 }
 
 const startQuiz = ()=>{
@@ -38,8 +38,15 @@ const displayResults = ()=>{
     document.getElementById("your-results-row").style.display = "inline";
 }
 
-function executeFunction(){
-    if (count <= 5) {
+let innerTextFunc = ()=> {
+    for (i=0; i<5; i++){
+         yourResultsRow.innerHTML += `For Question ${i+1} you answered... ${randNumArray[i]} x 7 = ${answerArray[i]} <br> The correct answer was ${correctAnsArray[i]} <br> ${userEncourageArray[i]}<br></br>`;
+    } 
+    yourResultsRow.innerHTML += `Your FINAL SCORE IS ${scoreCount} out 5`;
+}
+
+const executeFunction = () =>{
+    if (quesCounter <= 5) {
     let userInput = document.getElementById('user-input').value;
     answerArray.push(userInput);
     randNumArray.push(randNum);
@@ -89,14 +96,20 @@ function executeFunction(){
         alert("Not quite right. Try the next question.  Click ok to see your final score...")
     }
     
-    yourResultsRow.innerHTML = 
+    innerTextFunc();
+}
+};
+
+startQuizButton.onclick = startQuiz;
+submitButton.onclick = executeFunction;
+
+
+
+/* yourResultsRow.innerHTML = 
     `For Question 1 you answered... ${randNumArray[0]} x 7 = ${answerArray[0]} <br> The correct answer was ${correctAnsArray[0]} <br> ${userEncourageArray[0]}<br></br>
     For Question 2 you answered... ${randNumArray[1]} x 7 = ${answerArray[1]} <br> The correct answer was ${correctAnsArray[1]} <br> ${userEncourageArray[1]}<br></br>
     For Question 3 you answered... ${randNumArray[2]} x 7 = ${answerArray[2]} <br> The correct answer was ${correctAnsArray[2]} <br> ${userEncourageArray[2]}<br></br>
     For Question 4 you answered... ${randNumArray[3]} x 7 = ${answerArray[3]} <br> The correct answer was ${correctAnsArray[3]} <br> ${userEncourageArray[3]}<br></br>
     For Question 5 you answered... ${randNumArray[4]} x 7 = ${answerArray[4]} <br> The correct answer was ${correctAnsArray[4]} <br> ${userEncourageArray[4]}<br></br><br></br>
     Your FINAL SCORE IS ${scoreCount} out 5`;
-}
-}
-startQuizButton.onclick = startQuiz;
-submitButton.onclick = executeFunction;
+     */
