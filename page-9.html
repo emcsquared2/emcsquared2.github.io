@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
-    <link rel="stylesheet" href="./resources/css/day-8.css"/>
+    <link rel="stylesheet" href="./resources/css/page-9.css"/>
+    <link rel="stylesheet" href="./resources/css/all.css"/>
 </head>
 <body>
         
@@ -32,40 +33,28 @@
 
     <!---- Banner Title Section ---->
     <div class="banner">
-        <h1>Times Tables</h1>
+        <h1>Credit Card Checker</h1>
     </div>       
 
-    <!-- Section Times -->
-    <h2>Day 8 & 9</h2>
-    <p>I have completed my first completely independent project using as much knowledge as I could at this stage.  I was really hard work and a steep learning curve.  It has left me feeling like I have made loads of progress but the more 
-        I do, the more I realise how much there is to learn which can be overwhelming. I found I needed to go back over functions and arrays in particular...and used a lot of them. I'm certain there are better ways of coding what I have 
-        done. I haven't really spent any time yet going over and tidying up. One of my bigger questions is, I wonder if I should be storing answers into objects? It certainly feels like things could be neater.  I also really wanted to only use the feedback sentence "For Question 1 you answered....bla bla bla" only once.  
-        I tried to use the count value in an array within a string interpolation....   `bla bla bla ${array[count]}` but it did not like this and returned undefined.  I spent a while on this and googling but couldn't get an answer.  More knowledge needed! Still, I feel a sense of achievement because it works (and it was hard)!!</p>
-        <p><a target="_blank" id="git-code-link" href = "https://github.com/emcsquared2/emcsquared2.github.io/blob/e32d07378b3ec0e027f162eb529b0d3151518e05/resources/js/day-8.js"> Click here to view my code</a></p>
+    <!-- Section Credit Card Checker -->
+    <h2>16/04/21</h2>
+    <p>Bla bla bla</p>
+        <p>Click here to view my code in Github<a target="_blank" id="git-code-link" href = "https://github.com/emcsquared2/emcsquared2.github.io/blob/e32d07378b3ec0e027f162eb529b0d3151518e05/resources/js/day-8.js"> <i class="fab fa-3x fa-github"></i></a>or see below in CodePen</p>
     <div> 
-            <table class="quiz-table-1">
-                <tr id="start-row">
-                    <td><button  class= "quiz-button" id="start-quiz-button"> Click to start your 7 times tables quiz! (Only 5 questions) </button></td>
+            <table class="table-1">
+                <tr>
+                    <td >Please enter your credit card number below</td>
+                    <td></td>
                 </tr>
-
                 <tr id="question-row">
-                    <td width=15% id="question-count" >This should display Question 1)</td>
-                    <td width=5% id="rand-num-field" type="number">1</td>
-                    <td width=1%>x</td>
-                    <td width=5%>7</td>
-                    <td width=1%>=</td>
-                    <td width=10%><input type="number" id="user-input"> </td>
-                    <td width=5%><button class= "quiz-button" id="submit-button">Submit Answer!</button></td>
-                </tr>
-
-                <tr><p id="your-results-row"></p>
+                    <td><input type="number" id="user-input"></td>
+                    <td><button class= "quiz-button" id="submit-button">Submit</button></td>
+                    <td id="result"></td>
+                    <td id="check-icon"><i class="fas fa-3x fa-check-circle"></i></td>
                 </tr>
             </table>
     </div>
-
-    <p id="show-array">Monitor array answers </p>
-    <p id="show-rand-array">Monitor rand array </p>
-    
+  
     <h2>Update 10 - 29/03/2021</h2>
         <ul>
             <li>Really appreciating my friends/slash mentors encouraging and giving me feedback</li>
@@ -115,7 +104,7 @@
     </footer>      
 
     <!---- JS Code ---->
-    <script src="./resources/js/day-8.js"></script>
+    <script src="./resources/js/page-9.js"></script>
 
 </body>
 </html>
