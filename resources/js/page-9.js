@@ -34,6 +34,7 @@ const companies = {
     }
    if (companyMatch === ''){
     result.innerHTML = 'Card Unrecognised';
+    checkIcon.style.display = "none";
    }
   }
   

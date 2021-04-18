@@ -37,9 +37,21 @@
     </div>       
 
     <!-- Section Credit Card Checker -->
-    <h2>16/04/21</h2>
-    <p>Bla bla bla</p>
-        <p>Click here to view my code in Github<a target="_blank" id="git-code-link" href = "https://github.com/emcsquared2/emcsquared2.github.io/blob/e32d07378b3ec0e027f162eb529b0d3151518e05/resources/js/day-8.js"> <i class="fab fa-3x fa-github"></i></a>or see below in CodePen</p>
+    <h2>17/04/21</h2>
+    <p>After completing the Credit Card Checker Project on CodeCademy, I decided to adapt it and try and display it on my site in a new page entry.  This next project is another milestone in my JavaScript learning.  As you can tell, I haven't devoted any extra learning to HTML/CSS since
+        my Times Tables quiz (other than learning how to incorporate FontAwesome icons into HTML which is really neat).  I will list out below all of the major learning points that have got me to this next step.</p>
+    <p>Click on the GitHub logo here to view my JS code in Github <a target="_blank" id="git-code-link" href = "https://github.com/emcsquared2/emcsquared2.github.io/blob/main/resources/js/page-9.js"> <i class="fab fa-2x fa-github"></i></a> or see below in CodePen</p>
+    <h2>Credit Card Checker</h2>
+    <p>This simple credit card number checker will validate the number you enter and return the credit card company that corresponds with the number.  It does this by matching the first digit of the card number with the company. 
+        (For simplicity there are only 4 types of cards: Amex (starts with 3), Visa (starts with 4), MasterCard (starts with 5), Discover (starts with 6).  The validating part of the code uses the Luhn Algorithm. </p>
+        <p>Here are some valid credit card numbers that DO NOT work but are drawn from the random generator on the <a class="links" target="_blank" href=https://www.freeformatter.com/credit-card-number-generator-validator.html><u>FreeFormatter website</u></a> If you copy and paste one of them in, they should return VALID</p>
+        <ul>
+            <li>349440773083900</li>
+            <li>4485154259599521</li>
+            <li>5325961422067124</li>
+            <li>6011941790840594252</li>
+        </ul>
+
     <div> 
             <table class="table-1">
                 <tr>
@@ -47,7 +59,7 @@
                     <td></td>
                 </tr>
                 <tr id="question-row">
-                    <td><input type="number" id="user-input"></td>
+                    <td><input  id="user-input"></td>
                     <td><button class= "quiz-button" id="submit-button">Submit</button></td>
                     <td id="result"></td>
                     <td id="check-icon"><i class="fas fa-3x fa-check-circle"></i></td>
@@ -55,38 +67,28 @@
             </table>
     </div>
   
-    <h2>Update 10 - 29/03/2021</h2>
+    <h2>New Learning Points</h2>
         <ul>
-            <li>Really appreciating my friends/slash mentors encouraging and giving me feedback</li>
-            <li>Added a page alert in between each question to say whether the user got it right or wrong.  Not particularly elegant but it was a quick way of adding some feedback and for me to learn how it works!</li>
-            <li>Learnt how to make a link open in a new tab  target="_blank"</li>
-            <li>
-                I have moved back to CodeCademy to continue studying (on the full stack engineer career path).
+            <li>Community.  I made my first code post in the CodeCademy forums on 31.03.21  I have now started looking at other people's code and I have solved a problem for someone else.  I have also started to post to ask for feedback and direct messsaged for 
+                help on how others have worked something else (only after I have exhausted my google searching and gone away and come back at least once!)
             </li>
-             <li>
-               Signed up to Discord and will look to hopefully collaborate on a project in the near future. 
-            </li>
-            <li>Have been longing to insert a snippet of code into this webpage just to demonstrate some key learning points and share with others.
-                As a total beginner, trying to get my head around using new programs is sometimes harder than using code.  I investigated GitHub and Replit.
-                GitHub is good for a link (which I have done above).  Replit seems to embed an entire coding program widget thing, which wasn't what I wanted.
-                I got closer when I tried JSFiddle, but for some reason the iFrame wasn't working and it was a lot of trying to understand a foreign language.
-                Finally I signed up for CodePen which I had seen in other places and Ta Dah! Another example of understanding about 20% of what is going on and 
-                persisting until it works. Also amazing how collaborative the coding world is and how many tools there are for free.   
-            </li>
-            <li>
-                When going over the loops again I realised I could improve a bit of code in my quiz. See below.  I'm pretty pleased with this.  
-                I do wonder about the   <em>yourResultsRow.innerHTML += `Your FINAL SCORE IS ${scoreCount} out 5`</em>   It works well,  but I feel like there might be other ways of doing this better. 
-                I think what's happening is that it is replacing the whole contents of that element each time rather than adding an extra bit on each time.  So wondering if there is a more efficient way of doing it. Not sure.
-            </li>
-
+            <li>I'm really proud of this piece of work.  It incorporates a significant amount of learning I have gained.  I haven't used anything here that I don't have a good understanding of which gives it a much greater sense of ownership and achievement.
+                Here is a list of the skills I have learnt, understood and demonstrated in this project:
+                <ul>
+                    <li>Use of higher order iterator functions e.g. .split() and .reduce()</li>
+                    <li>Use of parseInt to convert a string to an integer</li>
+                    <li>Use of the for (let...) iterator function with an object</li>
+                    <li>Nesting a conditional ternary operator function within another one (I spotted this genius in someone else's code and magpied it)</li>
+                    <li>An improved fluency in making the code more succinct and neat</li>
+                </ul>
         </ul>
     </div>
 
     <!---- CodePen snip ---->
     <div id="code-pen-snip">
-        <p class="codepen" data-height="400px" data-theme-id="dark" data-default-tab="js" data-user="e_mcsquared2" data-slug-hash="MWJjYmZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="7 Times tables loop code">
-            <span>See the Pen <a href="https://codepen.io/e_mcsquared2/pen/MWJjYmZ">
-            7 Times tables loop code</a> by David (<a href="https://codepen.io/e_mcsquared2">@e_mcsquared2</a>)
+        <p class="codepen" data-height="422" data-theme-id="dark" data-default-tab="js" data-user="e_mcsquared2" data-slug-hash="abpjxBW" style="height: 422px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Credit Card Checker">
+            <span>See the Pen <a href="https://codepen.io/e_mcsquared2/pen/abpjxBW">
+            Credit Card Checker</a> by David (<a href="https://codepen.io/e_mcsquared2">@e_mcsquared2</a>)
             on <a href="https://codepen.io">CodePen</a>.</span>
           </p>
           <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
