@@ -53,8 +53,8 @@ div h1 {
 }
 
 @media screen and (max-width: 900px) {
-    h1, h3 {
+    h1 {
         width: 90%;
-        font-size:120%;	
+        font-size:100%;	
         }
 }
