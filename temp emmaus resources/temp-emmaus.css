@@ -52,7 +52,7 @@ div h1 {
     padding-top: 0px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     header h1 {
         width: 90%;
         font-size:100px;	
