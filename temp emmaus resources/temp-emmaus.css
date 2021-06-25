@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "refrigerator-deluxe-close-match";
+    src: url("./Fonts/tgl_0-1451eng.ttf");
+  }
+
+body img {
+    position: relative;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: auto;
+}
+
+#connect-form {
+    position: relative;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: auto;
+    max-height: 100%;
+    }
+
+h1 {
+    color: #415570;
+    font-family: "refrigerator-deluxe-close-match";
+    font-size: 500%;
+    font-weight: 500;
+    text-align: center;
+}
+  
+h3 {
+    color: #415570; 
+    font-family: "refrigerator-deluxe-close-match";
+    font-size: 150%;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+div h3 {
+    position: relative;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: auto;
+    }
+
+div h1 {
+    padding-top: 0px;
+}
