@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-image: url(../christmas-images/header.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.header-text{
+    font-family: Fleur De Leah, cursive;
+    font-weight: normal;
+    font-size: 18vw;
+    color:white;
+    border: none 3px blue;
+    padding: 2% 0 0 4%;
+}
+
+.sub-header-text{
+    font-family: Lato, Arial, Helvetica, sans-serif ;
+    color: white;
+    font-size: 2vw;
+    border: none 3px blue;
+    padding: 0% 0 2% 5%;
+}
+
+.orange-glow{
+    text-shadow: .3vw .3vw 1vw #d68000;
+}
+
+/*p{
+    color:red;
+    font-family: 'Lato', sans-serif;
+}
+
+font-family: 'Fleur De Leah', cursive;
+font-family: 'Lato', sans-serif;
+*/
